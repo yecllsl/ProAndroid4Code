@@ -33,7 +33,7 @@ public class MainActivity extends Activity
         this.setupButton();
         this.setupEditText();
     }
-
+//option菜单，通过这个菜单选择要测试的命令
     @Override
     public boolean onCreateOptionsMenu(Menu menu) 
     {
@@ -59,6 +59,7 @@ public class MainActivity extends Activity
     	}
     	return true;
     }
+    //根据菜单选项执行相应命令
     private void handleMenus(MenuItem item)
     {
 		this.appendMenuItemText(item);
@@ -122,6 +123,7 @@ public class MainActivity extends Activity
        		(TextView)this.findViewById(R.id.textViewId);
        	tv.setText("");
     }
+    //调用拨号应用
     private void dial()
     {
     	Intent intent = new Intent(Intent.ACTION_DIAL);
